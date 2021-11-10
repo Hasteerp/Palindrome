@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//add code below this line
+bool IsPalindrome(string x)
+{int i=0;int q=0;int s=0;
+  for(i; x[i];i++){}
+ string arr[i];
+  for(int j=i-1;j>=0;j--)
+  {
+    arr[q] = x[j];
+    q++;
+  }
+ string u[i];
+ for(int n=0;n<i;n++)
+  {
+    u[n] = x[n];
+  }
+ 
+ for(int w=0;w<i;w++)
+ {
+   if(u[w] == arr[w])
+   {s=s+1;}
+ }
+ if(s == i)
+ {
+   return true; 
+ }
+ else 
+ {
+   return false;
+ }
+ 
+ 
+/* if(arr == u)
+ {
+   return true;
+ }*/
+   
+ 
+ 
+  
+}
+
+
+//add code above this line
+
+int main(int argc, char** argv) {
+  string x = argv[1];
+  cout << boolalpha << IsPalindrome(x) << endl;
+}
